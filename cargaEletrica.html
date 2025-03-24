@@ -9,13 +9,64 @@
     <script src="apps.js" defer ></script>
 </head>
 <body>
-    <header class="index__header">
+    <header class="cargaEletrica__header">
         <p></p>
         <nav>
-            <a class="index__header__a1" href="index.html">Página Inicial</a>
+            <a class="cargaEletrica__header__a1" href="index.html">Retornar ao menu</a>
         </nav>
     </header>
     <main>
+        <center><h1 class="cargaEletrica__main__h1">Carga Elétrica</h1></center>
+            <div class="cargaEletrica__div">
+                <div class="cargaEletrica__text">
+                    <h2 class="cargaEletrica__main__h2">O que é?</h2>
+                    <p class="cargaEletrica__main__p">A eletricidade é um dos fenômenos mais estudados da física, estando presente em diversos aspectos do nosso cotidiano. Conceitos como carga elétrica, corrente elétrica e eletrização de corpos são fundamentais para compreender os princípios do funcionamento de circuitos elétricos, descargas atmosféricas e interações eletrostáticas. Este artigo explora esses conceitos de forma aprofundada, abordando desde a definição de carga elétrica até o cálculo de corrente e quantidade de elétrons envolvidos em diferentes situações.</p>
+                </div>
+                <section class="cargaEletrica__section">
+                    <h2>Equações</h2>
+                    <!DOCTYPE html>
+                    <html lang="pt-BR">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Cálculo de Carga Elétrica</title>
+                        <link rel="stylesheet" href="styles.css">
+                    </head>
+                    <body>
+                    
+                        <div class="container">
+                            <h1>Cálculo de Carga Elétrica</h1>
+                            
+                            <ul class="cargaEletrica__unordelist">
+                                <li>
+                                    Q = n * e <br>
+                                    Q = Carga elétrica (C – coulomb);<br>
+                                    n = Número de cargas elementares;<br>
+                                    e = Carga elementar (e = 1,6 x 10⁻¹⁹ C).
+                                </li>
+                            </ul>
+                    
+                            <div class="input-group">
+                                <label for="n">Número de cargas elementares (n):</label>
+                                <input type="number" id="n" placeholder="Digite o valor de n" required>
+                            </div>
+                    
+                            <div class="input-group">
+                                <label for="e">Carga elementar (e):</label>
+                                <input type="number" id="e" placeholder="Digite o valor de e" value="1.6e-19" required>
+                            </div>
+                    
+                            <button id="calcularBtn" class="botao">Calcular</button>
+                    
+                            <h3 class="resultado-texto">Resultado: <span id="resultado">-</span> C</h3>
+                        </div>
+                    
+                        <script src="script.js"></script>
+                    </body>
+                    </html>
+                    
+                </section>
+            </div>
     </main>
     <footer>
 

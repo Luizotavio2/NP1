@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --background-color: #000000;
     --footer: #22D4FD;
     --ancora-hover: #1BA5C9;
@@ -15,7 +15,7 @@
     --secondary-font: "Montserrat", sans-serif;
 }
 
-body{
+body {
     background-color: var(--background-color);
     height: 100vh;
     color: var(--text-color);
@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .login-box {
@@ -35,7 +36,8 @@ body{
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(34, 212, 253, 0.2);
     text-align: center;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     font-family: var(--mains-font);
     color: var(--text-color);
 }
@@ -71,4 +73,137 @@ button {
 
 button:hover {
     background-color: var(--ancora-hover);
+}
+
+.cargaEletrica__header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.cargaEletrica__header__a1 {
+    text-decoration: none;
+    color: var(--footer);
+    font-family: var(--secondary-font);
+}
+
+.botao {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--secondary-font);
+}
+
+.cargaEletrica__main__h1 {
+    margin-bottom: 2%;
+    color: var(--footer);
+    text-align: center;
+}
+
+.cargaEletrica__main__h2 {
+    margin: 1% auto;
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--footer);
+}
+
+.cargaEletrica__main__p {
+    margin: 5%;
+    margin-top: 1%;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+.cargaEletrica__section {
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+}
+
+.cargaEletrica__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.cargaEletrica__text {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cargaEletrica__div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cargaEletrica__main__h2, .cargaEletrica__main__p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .cargaEletrica__header {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+.input-group {
+    margin: 10px 0;
+    text-align: left;
+    width: 200px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #22D4FD;
+    border-radius: 5px;
+    background-color: #222;
+    color: #F6F6F6;
+}
+
+.botao {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #22D4FD;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #1BA5C9;
+}
+
+.resultado-texto {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
 }
